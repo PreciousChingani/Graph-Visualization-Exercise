@@ -1,2 +1,2 @@
 # Graph-Visualization-Exercise
-Graph Visualization Exercise: Malawi Districts  Objective
+Graph Visualization Exercise for Malawi Districts  
