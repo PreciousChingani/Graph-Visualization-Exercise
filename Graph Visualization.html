@@ -46,6 +46,7 @@
   <div class="log" id="log"></div>
 
   <script>
+	    // Adjacency List and Initial Positions
     const graph = {
       nodes: [
           { "id": "Blantyre", "x": 0.9134213014976535, "y": 0.2540740323898225 },
@@ -76,7 +77,7 @@
 		  { "id": "Zomba", "x": 0.7252659639019722, "y": 0.810888016094619 },
 		  { "id": "Balaka", "x": 0.15932838570160823, "y": 0.5698123530031478 },
 		  { "id": "Likoma", "x": 0.3488343806746971, "y": 0.6253864059894712 }
-        // (Truncated for brevity - keep full list in actual code)
+       
       ],
       edges: [
          ["Blantyre", "Chikwawa"], ["Blantyre", "Chiradzulu"], ["Blantyre", "Thyolo"],
@@ -91,7 +92,7 @@
 			["Nkhotakota", "Salima"], ["Nsanje", "Chikwawa"], ["Ntcheu", "Balaka"],
 			["Ntchisi", "Nkhotakota"], ["Phalombe", "Mulanje"], ["Salima", "Nkhotakota"],
 			["Zomba", "Machinga"],
-        // (Truncated for brevity - keep full list in actual code)
+      
       ]
     };
 
@@ -99,7 +100,7 @@
     const log = document.getElementById('log');
     const width = svg.clientWidth;
     const height = svg.clientHeight;
-
+      //Fruchterman-Reingold Parameters
     const nodes = graph.nodes.map(n => ({ ...n, dx: 0, dy: 0 }));
     const nodeMap = new Map(nodes.map(n => [n.id, n]));
     const k = 0.5 * Math.sqrt(1 / nodes.length);
