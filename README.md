@@ -33,7 +33,7 @@ This process runs for multiple iterations until the system reaches a balanced st
 
 Option 1: download/Open raw `index.html` file:
     Open the `index.html` file in any modern web browser (e.g., Chrome, Firefox, Edge).
-    You can do this by double-clicking the file or by right-clicking and choosing "Open with" -> "Your Web Browser".
+    You can do this by double-clicking the file or by right-clicking and selecting "Open with"> "Your Web Browser".
   
 Option 2: Clone the repository:
     ```bash
@@ -57,6 +57,7 @@ The browser’s developer console (F12 > Console).
 
 ---
 Dependencies
+
 No external libraries or frameworks are needed.
 This project runs entirely on:
 -HTML
